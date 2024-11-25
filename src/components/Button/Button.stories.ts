@@ -18,7 +18,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
-    primary: true,
     label: 'Click me',
   },
 };
@@ -26,5 +25,13 @@ export const Primary: Story = {
 export const Secondary: Story = {
   args: {
     label: 'Click me',
+    primary: false,
+  },
+};
+
+export const Disabled: Story = {
+  args: {
+    label: 'Click me',
+    disabled: true,
   },
 };
