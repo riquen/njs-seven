@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply block text-2xl font-bold m-0;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+  }
+
+  h2 {
+    @apply block text-xl font-bold m-0;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+  }
+
+  h3 {
+    @apply block text-lg font-bold m-0;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+  }
+
+  h4 {
+    @apply block text-base font-bold m-0;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+  }
+
+  p {
+    @apply block text-base font-normal m-0;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+  }
+
+  button {
+    @apply inline-block text-base font-medium text-center px-4 py-2 rounded cursor-pointer m-0;
+    @apply border border-transparent bg-transparent text-black;
+    transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+  }
+
+  button:hover {
+    @apply bg-gray-200 text-black;
+  }
+
+  button:focus {
+    @apply outline-none;
+  }
+
+  button:active {
+    @apply bg-gray-300 text-black;
+  }
+
+  button:disabled {
+    @apply bg-gray-100 text-gray-400 cursor-not-allowed;
+  }
+}
